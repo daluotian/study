@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello world!</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+this this the index page
+</body>
+<script>
+    $(function(){
+        $.ajax({
+            url:"/test",
+            type:"post",
+            dataType:"json",
+            success:function (json) {
+                console.log(json);
+            }
+        })
+    })
+</script>
+</html>

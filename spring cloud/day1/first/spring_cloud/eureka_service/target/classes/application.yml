@@ -1,0 +1,23 @@
+server:
+  port: 9000
+  
+
+#配置eureka
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #是否将自己注册到注册中心，因为这里自身是注册中心，所以false
+    #若需要eureka主机之间互相注册，则需要改成true 或者不写 默认为 true
+    register-with-eureka: false
+    #是否要从eureka中获取注册信息，因为这里自身是注册中心，所以false
+    #若需要eureka主机之间互相注册，则需要改成true 或者不写 默认为 true
+    fetch-registry: false
+    #配置暴露给eureka client的请求地址
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      #defaultZone: http://127.0.0.1:8000/eureka/
+
+spring:
+  application:
+    name: eureka-server

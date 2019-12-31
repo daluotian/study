@@ -1,0 +1,27 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-product
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: TIANZHIDAO233
+    
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+  
+#配置eurekaClient  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+      #同时向多个eureka主机注册
+      #defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
+  instance:
+    #使用IP地址注册
+    prefer-ip-address: true
