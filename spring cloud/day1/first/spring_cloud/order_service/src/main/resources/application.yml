@@ -31,3 +31,10 @@ eureka:
     #设置续约到期时间
     lease-expiration-duration-in-seconds: 30
     
+#修改ribbon的负载均衡策略 服务名 - ribbon - NFLoadBalanceRuleClassName
+#service-product:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+logging:
+  level: 
+    root: debug
