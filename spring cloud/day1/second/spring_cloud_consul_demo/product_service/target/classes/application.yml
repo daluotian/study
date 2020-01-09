@@ -1,0 +1,37 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: service-product
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: TIANZHIDAO233
+    
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+    
+###配饰consul的服务注册
+  cloud:
+    consul:
+      #consul注册的主机地址
+      host: 127.0.0.1
+      #ip端口
+      port: 8500
+      discovery:
+        #是否需要注册
+        register: true
+        #注册实例的ID（唯一标识）
+        instance-id: ${spring.application.name}-1
+        #服务的名称
+        service-name: ${spring.application.name}
+        #服务的请求端口
+        port: ${server.port}
+        #指定开启ip地址注册
+        prefer-ip-address: true
+        #当前服务的请求ip
+        ip-address: ${spring.cloud.client.ip-address}
