@@ -25,6 +25,7 @@
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
         <!--actuator的健康检查-->
+        <!--不论是服务提供者还是调用者需要加上这个依赖，否则consul无法确认安全，将无法正确调用-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
