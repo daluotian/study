@@ -14,6 +14,7 @@ spring:
     database: mysql
     show-sql: true
     open-in-view: true
+    
 #配置Eureka
 eureka:
   client:
@@ -45,3 +46,14 @@ service-product:
     MaxAutoRetriesNextServer: 1
     #对当前实例重试次数
     MaxAutoRetrice: 1
+feign:
+  client:
+    config:
+      service-product:
+        #NONE-不输出，效率最高，生产环境,BASIC-生产环境追踪问题
+        #HEADERS-在basic的基础上输出记录的请求和响应头,FULL-全部输出
+        loggerLevel: FULL
+logging:
+  level:
+    #只针对某个类或者某个接口的日志输出
+    cn.idealismus.order.feign.ProductFeignClient: debug
