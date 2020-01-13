@@ -3,6 +3,17 @@ server:
 spring:
   application:
     name: service-order
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080 #配置sentinel控制台请求路径
+      datasource: 
+        ds1:
+          file:
+            file: classpath:flowrule.json
+            data-type: json
+            rule-type: flow
+      eager: true #立即加载sentinel控制台数据
 eureka:
   client:
     service-url:
@@ -24,6 +35,8 @@ hystrix:
     default:
       execution:
         isolation:
+          strategy: ExecutionIsolationStrategy.SEMAPHORE #信号量隔离 #ExecutionIsolationStrategy.THREAD #线程池隔离
+          maxConcurrentRequests: 50 #最大信号量上限
           thread:
             timeoutInMilliseconds: 3000 #默认连接超时时间为1S，若超过1S,自动触发熔断降级
       circuitBreaker:

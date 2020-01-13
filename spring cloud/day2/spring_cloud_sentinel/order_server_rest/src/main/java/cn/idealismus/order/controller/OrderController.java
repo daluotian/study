@@ -2,7 +2,6 @@ package cn.idealismus.order.controller;
 
 import cn.idealismus.order.entity.Product;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,15 +34,16 @@ public class OrderController {
      *  开始基于ribbon形式调用远程微服务
      *  1.使用 @LoadBalanced 声明 RestTemplate
      *  2.使用服务名替换ip地址
+     *  
+     *  @SentinelResource
+     *      blockHandler : 声明熔断时调用的降级方法
+     *      fallBack : 抛出异常时的降级方法
+     *      value : 自定义资源名称
+     *          *不设置 : 当前全类名.方法名
      */
-    /**
-     * 使用注解配置熔断保护 @HystrixCommand
-     *  fallbackMethod : 配置熔断之后的降级方法
-     * @param id
-     * @return
-     */
+    
     @RequestMapping(value = "/buy/{id}",method = RequestMethod.GET)
-    @HystrixCommand(fallbackMethod = "orderFallBack")
+    //@SentinelResource(value = "orderFindById",blockHandler = "orderBlockHandler",fallback = "orderFallBack")
     public Product findById (@PathVariable Integer id) {
         if (id != 1) {
             throw new RuntimeException("ID不为1，服务器返回异常");
@@ -53,24 +53,20 @@ public class OrderController {
     }
 
     /**
-     * 降级方法
-     * 和需要保护的方法的返回值一致
-     * 方法参数一致
-     * @return
+     * 定义降级逻辑
+     * hystrix和sentinel
+     *      熔断执行的降级方法
+     *      抛出异常执行的降级方法
      */
-    public Product orderFallBack (Integer id) {
+    /*public Product orderBlockHandler (Integer id) {
         Product product = new Product();
-        product.setProductName("触发降级");
+        product.setProductName("触发熔断的降级方法");
         return product;
     }
 
-    /**
-     * 指定统一的降级方法
-     * 参数 : 没有参数
-     */
-    public Product defaultFallBack () {
+    public Product orderFallBack (Integer id) {
         Product product = new Product();
-        product.setProductName("触发统一的降级方法");
+        product.setProductName("抛出异常的降级方法");
         return product;
-    }
+    }*/
 }
