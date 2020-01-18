@@ -1,0 +1,2 @@
+2020/01/18 10:27:36 [error] 9428#9284: *1 CreateFile() "D:\property\nginx-1.16.1/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2020/01/18 10:31:05 [error] 9428#9284: *4 CreateFile() "D:\property\nginx-1.16.1/html/api-product/product/1" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /api-product/product/1 HTTP/1.1", host: "localhost"

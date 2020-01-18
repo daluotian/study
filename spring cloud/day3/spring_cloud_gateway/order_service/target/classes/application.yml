@@ -1,0 +1,59 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: service-order
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloud?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: TIANZHIDAO233
+    
+  jpa:
+    database: mysql
+    show-sql: true
+    open-in-view: true
+    
+#配置Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+      #同时向多个eureka主机注册
+      #defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
+  instance:
+    #使用ip地址注册
+    prefer-ip-address: true
+    #向注册中心注册服务ID
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    #设置心跳的时间
+    lease-renewal-interval-in-seconds: 15
+    #设置续约到期时间
+    lease-expiration-duration-in-seconds: 30
+    
+#修改ribbon的负载均衡策略 服务名 - ribbon - NFLoadBalanceRuleClassName
+service-product:
+  ribbon:
+    #NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    #ribbon的连接超时时间
+    ConnectTimeout: 250
+    #ribben的读取超时时间
+    ReadTimeout: 1000
+    #是否对所有的操作进行重试
+    OkToRetryOnAllOperation: true
+    #切换实例重试次数
+    MaxAutoRetriesNextServer: 1
+    #对当前实例重试次数
+    MaxAutoRetrice: 1
+feign:
+  client:
+    config:
+      service-product:
+        #NONE-不输出，效率最高，生产环境,BASIC-生产环境追踪问题
+        #HEADERS-在basic的基础上输出记录的请求和响应头,FULL-全部输出
+        loggerLevel: FULL
+logging:
+  level:
+    #只针对某个类或者某个接口的日志输出
+    cn.idealismus.order.feign.ProductFeignClient: debug
