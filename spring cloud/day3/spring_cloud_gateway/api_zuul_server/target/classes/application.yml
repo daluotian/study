@@ -9,10 +9,12 @@ zuul:
    # product-service: #路由id
       #path: /product-service/** #localhost:8080/product-service/...所有子路径
       #url: http://127.0.0.1:9001 #需要映射的路径对应的实际微服务地址 第一种方式
+    
       #serviceId: service-product #配置转发的微服务的服务名称 第二种方式（需要配个eureka）
     service-product: /product-service/** #第三种（需要配个eureka），简化版 服务名+路由路径
     #zuul中的默认路由配置
     #如果当前的微服务路径名称 service-product 默认的请求映射路径 /service-product/**
+    
 eureka:
   client:
     service-url: 

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 
+
 /**
  * @author Administrator
  */
@@ -15,10 +16,10 @@ import javax.servlet.http.HttpServletRequest;
 public class LoginFilter extends ZuulFilter {
     /**
      * 定义过滤器类型
-     * pre
-     * routing
-     * post
-     * error
+     *  pre 在调用之前访问 做访问验证
+     *  routing 开启调用和调用结束 做负载均衡和服务降级
+     *  post 在请求返回之前 在返回之前添加信息
+     *  error 发生错误
      * @return
      */
     @Override
@@ -28,7 +29,7 @@ public class LoginFilter extends ZuulFilter {
 
     /**
      * 指定过滤器的执行顺序
-     * 返回值越小，执行顺序越高
+     *  返回值越小 执行顺序越高
      * @return
      */
     @Override
@@ -37,9 +38,9 @@ public class LoginFilter extends ZuulFilter {
     }
 
     /**
-     * 当前过滤器是否生效
-     * true : 使用该过滤器
-     * false : 不适用该过滤器
+     * 当前过滤器是是够生效
+     * true 使用
+     * false 不适用
      * @return
      */
     @Override
@@ -48,28 +49,22 @@ public class LoginFilter extends ZuulFilter {
     }
 
     /**
-     * 指定过滤器中的业务逻辑
-     *  身份认证:
-     *      1.所有的请求需要携带一个参数 : access-token
-     *      2.获取request请求
-     *      3.通过request获取参数access-token
-     *      4.判断token是否为空
-     *      4.1 token==null : 身份验证失败
-     *      4.2 token!=null : 执行后续操作
-     *  在zuul网关中,通过RequestContext的上下问对象,可以获取对象request对象
-     * 过滤器业务
+     * 过滤器中的业务逻辑
+     * 在zuul网关中，通过RequestContext的上下文，可以获取Request对象
      * @return
      * @throws ZuulException
      */
     @Override
     public Object run() throws ZuulException {
-        RequestContext requestContext = RequestContext.getCurrentContext();
-        HttpServletRequest request = requestContext.getRequest();
+        //1 获得zuul的RequestContext对象
+        RequestContext currentContext = RequestContext.getCurrentContext();
+        //2 从 RequestContext 中获取Request
+        HttpServletRequest request = currentContext.getRequest();
+        //3 从 Request 中获取参数
         String token = request.getParameter("access-token");
-        if (null == token) {
-            //拦截请求，返回失败
-            requestContext.setSendZuulResponse(false);
-            requestContext.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
+        if (token == null) {
+            currentContext.setSendZuulResponse(false);
+            currentContext.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
         }
         return null;
     }
