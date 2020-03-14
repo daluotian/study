@@ -5,9 +5,7 @@ import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.stereotype.Component;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -16,7 +14,7 @@ import reactor.core.publisher.Mono;
  * 实现两个接口
  * GlobalFilter, Ordered
  */
-@Component
+//@Component
 public class LoginFilter implements GlobalFilter, Ordered {
 
     /**

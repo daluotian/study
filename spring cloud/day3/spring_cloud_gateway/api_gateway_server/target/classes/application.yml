@@ -3,11 +3,23 @@ server:
 spring:
   application:
     name: api-gateway-server
-#配置SpringCloudGateway的路由
+  redis:
+    host: localhost
+    pool: 6379
+    database: 0
+  #配置SpringCloudGateway的路由
   cloud:
     gateway:
       routes: 
-        #配置路由，路由ID，路由到微服务的uri。断言（判断条件
+      #配置路由，路由ID，路由到微服务的uri。断言（判断条件
+       - id: order-service #id唯一
+         #uri: http://127.0.0.1:9001 #目标微服务地址
+         uri: lb://service-order #lb:// 代表根据微服务名称从注册中心拉取服务请求路径
+         predicates:
+          #- Path=/product/** #path，路径
+           - Path=/order-service/**
+         filters:
+           - RewritePath=/order-service/(?<segment>.*), /$\{segment}
        - id: product-service #id唯一
          #uri: http://127.0.0.1:9001 #目标微服务地址
          uri: lb://service-product #lb:// 代表根据微服务名称从注册中心拉取服务请求路径
@@ -15,12 +27,30 @@ spring:
            #- Path=/product/** #path，路径
            - Path=/product-service/**
          filters:
+           #- name: RequestRateLimiter
+         #    args: 
+               # 使用 SpEL从容器中获取对象
+         #      key-resolver: '#{@pathKeyResolver}'
+               # 填充桶的速度
+         #      redis-rate-limiter.replenishRate: 1
+               # 令牌桶的上限
+         #      redis-rate-limiter.burstCapacity: 3
            - RewritePath=/product-service/(?<segment>.*), /$\{segment}
+          
+          # RequestRateLimiter ：使用限流过滤器，是spring cloud gateway 提供的
+          # 参数 
       #配置自动根据微服务名称进行路由转发
       discovery:
         locator:
           enabled: true #开启根据服务名称自动转发
           lower-case-service-id: true #微服务名称以小写形式呈现
+  zipkin:
+    base-url: http://localhost:9411/ #server请求地址
+    sender:
+      type: web #数据传输方式。http形式向server端发送
+  sleuth:
+    sampler:
+      probability: 1 #采样比
 #eurka注册中心配置
 eureka:
   client:
@@ -28,3 +58,8 @@ eureka:
       defaultZone: http://localhost:9000/eureka/
   instance:
     prefer-ip-address: true
+logging:
+  level: 
+    root: info
+    org.springframework.web.servlet.DispatcherServlet: debug
+    org.springframework.cloud.sleuth: debug
