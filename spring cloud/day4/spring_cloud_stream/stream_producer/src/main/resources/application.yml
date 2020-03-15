@@ -10,8 +10,13 @@ spring:
   cloud:
     stream:
       bindings: 
-        output: #管道
-          destination: idealismus #指定消息发送的目的地 在rabbitMQ，发送到idealismus的exchange中
+        #output: #管道
+        #  destination: idealismus #指定消息发送的目的地 在rabbitMQ，发送到idealismus的exchange中
+        my_output:
+          destination: idealismus-custom
+          producer:
+            partition-key-expression: payload #分区关键字 分区的表达式规则 对象中的ID，对象
+            partition-count: 2 #分区大小
       binders: #配置绑定器
         defaultRabbit:
           type: rabbit

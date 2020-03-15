@@ -10,7 +10,7 @@ spring:
   cloud:
     stream:
       instance-count: 2 #消费者总数
-      instance-index: 0 #当前消费者索引
+      instance-index: 1 #当前消费者索引
       bindings:
         my_input:
           destination: idealismus-custom
