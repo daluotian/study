@@ -4,7 +4,7 @@ spring:
   application:
     name: rabbit-producer #服务名称
   rabbitmq:
-    addresses: 124.156.103.105 #请求路径
+    addresses: 192.168.0.1 #请求路径
     username: guest
     password: guest
   cloud:

@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: eureka-server
+  rabbitmq:
+    addresses: 124.156.103.105 #请求路径
+    username: guest
+    password: guest
+    port: 5672
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #将自己注册到eureka false
+    fetch-registry: false #是否从eureka中获取注册信息
+    service-url: 
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    enable-self-preservation: false #关闭自我保护
+    eviction-interval-timer-in-ms: 4000 #剔除服务的间隔
