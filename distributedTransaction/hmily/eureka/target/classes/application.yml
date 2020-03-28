@@ -1,0 +1,18 @@
+server:
+  port: 56080
+
+spring:
+  application:
+    name: eureka-service
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+    hostname: ${spring.cloud.client.ip-address}
+    prefer-ip-address: true
+logging:
+  config: classpath:log4j2-dev.xml
