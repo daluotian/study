@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="F:/BaiduNetdiskDownload/资料-微服务架构的分布式事务控制解决方案/day1/代码/dtx-seata-demo/dtx-seata-demo/dtx-seata-demo-bank1/pom.xml" />
+        <option value="F:/BaiduNetdiskDownload/资料-微服务架构的分布式事务控制解决方案/day1/代码/dtx-seata-demo/dtx-seata-demo/dtx-seata-demo-bank2/pom.xml" />
+        <option value="F:/BaiduNetdiskDownload/资料-微服务架构的分布式事务控制解决方案/day1/代码/dtx-seata-demo/dtx-seata-demo/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

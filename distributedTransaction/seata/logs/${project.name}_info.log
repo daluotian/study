@@ -1,0 +1,176 @@
+2020-03-28 14:02:00,617 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+2020-03-28 14:02:01,260 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-03-28 14:02:01,431 INFO [main][GenericScope.java:294] - BeanFactory id=455873a8-1060-336c-b1fd-bd16ddd2a667
+2020-03-28 14:02:01,498 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4ed109ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-28 14:02:01,837 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 56080 (http)
+2020-03-28 14:02:01,851 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-56080"]
+2020-03-28 14:02:01,860 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+2020-03-28 14:02:01,861 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-03-28 14:02:01,869 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\property\Java\jdk1.8.0_101\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;D:\soft\NetSarang\Xshell 6\;D:\soft\NetSarang\Xftp 6\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Action;D:\property\Java\jdk1.8.0_101\bin;E:\mysql\mysql-5.6.17-winx64\bin;C:\apache-maven-3.5.3\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\soft\apache-maven-3.6.2\bin;D:\soft\mysql-8.0.18-winx64\bin;D:\soft\TortoiseSVN\bin;C:\Program Files\Redis\;D:\soft\MinGW\bin;C:\Program Files\Git\cmd;D:\property\ssh;D:\soft\IDE\IntelliJ IDEA 2019.2.3\bin;;.]
+2020-03-28 14:02:01,977 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2020-03-28 14:02:01,978 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 1349 ms
+2020-03-28 14:02:02,060 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+2020-03-28 14:02:02,061 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-28 14:02:02,071 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@59ce792e
+2020-03-28 14:02:02,594 INFO [main][WebApplicationImpl.java:815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2020-03-28 14:02:02,651 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-03-28 14:02:02,651 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-03-28 14:02:02,750 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-03-28 14:02:02,751 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-03-28 14:02:03,063 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+2020-03-28 14:02:03,063 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-28 14:02:03,189 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-28 14:02:03,588 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+2020-03-28 14:02:03,611 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+2020-03-28 14:02:03,612 INFO [main][DiscoveryClient.java:352] - Client configured to neither register nor query for data.
+2020-03-28 14:02:03,620 INFO [main][DiscoveryClient.java:365] - Discovery Client initialized at timestamp 1585375323618 with initial instances count: 0
+2020-03-28 14:02:03,654 INFO [main][DefaultEurekaServerContext.java:63] - Initializing ...
+2020-03-28 14:02:03,656 INFO [main][PeerEurekaNodes.java:188] - Adding new peer nodes [http://localhost:56080/eureka/]
+2020-03-28 14:02:03,811 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+2020-03-28 14:02:03,811 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+2020-03-28 14:02:03,811 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+2020-03-28 14:02:03,812 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+2020-03-28 14:02:03,896 INFO [main][PeerEurekaNodes.java:110] - Replica node URL:  http://localhost:56080/eureka/
+2020-03-28 14:02:03,903 INFO [main][AbstractInstanceRegistry.java:151] - Finished initializing remote region registries. All known remote regions: []
+2020-03-28 14:02:03,904 INFO [main][DefaultEurekaServerContext.java:70] - Initialized
+2020-03-28 14:02:03,912 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-03-28 14:02:03,974 INFO [main][EurekaServiceRegistry.java:42] - Registering application EUREKA-SERVICE with eureka with status UP
+2020-03-28 14:02:03,977 INFO [Thread-22][EurekaServerBootstrap.java:109] - Setting the eureka configuration..
+2020-03-28 14:02:03,977 INFO [Thread-22][EurekaServerBootstrap.java:114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+2020-03-28 14:02:03,978 INFO [Thread-22][EurekaServerBootstrap.java:128] - Eureka environment value eureka.environment is not set, defaulting to test
+2020-03-28 14:02:03,985 INFO [Thread-22][EurekaServerBootstrap.java:184] - isAws returned false
+2020-03-28 14:02:03,986 INFO [Thread-22][EurekaServerBootstrap.java:152] - Initialized server context
+2020-03-28 14:02:03,986 INFO [Thread-22][PeerAwareInstanceRegistryImpl.java:241] - Got 1 instances from neighboring DS node
+2020-03-28 14:02:03,986 INFO [Thread-22][PeerAwareInstanceRegistryImpl.java:242] - Renew threshold is: 1
+2020-03-28 14:02:03,986 INFO [Thread-22][PeerAwareInstanceRegistryImpl.java:253] - Changing status to UP
+2020-03-28 14:02:03,989 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-56080"]
+2020-03-28 14:02:03,995 INFO [Thread-22][EurekaServerInitializerConfiguration.java:72] - Started Eureka Server
+2020-03-28 14:02:04,010 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 56080 (http) with context path ''
+2020-03-28 14:02:04,011 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 56080
+2020-03-28 14:02:04,013 INFO [main][StartupInfoLogger.java:59] - Started EurekaApplication in 4.739 seconds (JVM running for 5.879)
+2020-03-28 14:02:04,546 INFO [RMI TCP Connection(3)-192.168.20.46][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 14:02:04,546 INFO [RMI TCP Connection(3)-192.168.20.46][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+2020-03-28 14:02:04,554 INFO [RMI TCP Connection(3)-192.168.20.46][FrameworkServlet.java:546] - Completed initialization in 8 ms
+2020-03-28 14:03:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:03:35,082 INFO [http-nio-56080-exec-1][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:03:35,691 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:04:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:05:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:06:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:06:54,832 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=false)
+2020-03-28 14:06:55,337 INFO [http-nio-56080-exec-7][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=true)
+2020-03-28 14:07:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:08:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:09:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:10:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:11:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:12:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:13:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:14:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:15:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:16:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:17:03,903 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 5
+2020-03-28 14:17:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:18:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:19:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:20:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:21:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:22:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:23:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:24:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:25:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:25:33,642 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=false)
+2020-03-28 14:25:34,151 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=true)
+2020-03-28 14:25:53,170 INFO [http-nio-56080-exec-1][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:25:53,677 INFO [http-nio-56080-exec-5][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:26:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:27:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:28:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:28:49,457 INFO [http-nio-56080-exec-1][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=false)
+2020-03-28 14:28:49,968 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=true)
+2020-03-28 14:28:52,501 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:330] - Cancelled instance BANK1/bank1:192.168.20.46:56081 (replication=false)
+2020-03-28 14:28:53,005 WARN [http-nio-56080-exec-6][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK1/bank1:192.168.20.46:56081
+2020-03-28 14:28:53,005 INFO [http-nio-56080-exec-6][InstanceResource.java:288] - Not Found (Cancel): BANK1 - bank1:192.168.20.46:56081
+2020-03-28 14:28:53,006 WARN [TaskBatchingWorker-target_localhost-8][ReplicationTask.java:35] - The replication of task BANK1/bank1:192.168.20.46:56081:Cancel@localhost failed with response code 404
+2020-03-28 14:28:53,006 WARN [TaskBatchingWorker-target_localhost-8][PeerEurekaNode.java:171] - BANK1/bank1:192.168.20.46:56081:Cancel@localhost: missing entry.
+2020-03-28 14:29:01,817 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=false)
+2020-03-28 14:29:02,325 INFO [http-nio-56080-exec-5][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=true)
+2020-03-28 14:29:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:29:08,707 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=false)
+2020-03-28 14:29:08,823 INFO [http-nio-56080-exec-5][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=true)
+2020-03-28 14:29:08,830 WARN [TaskBatchingWorker-target_localhost-12][ReplicationTask.java:35] - The replication of task BANK2/bank2:192.168.20.46:56082:Heartbeat@localhost failed with response code 409
+2020-03-28 14:29:08,830 WARN [TaskBatchingWorker-target_localhost-12][PeerEurekaNode.java:361] - Peer wants us to take the instance information from it, since the timestamp differs,Id : bank2:192.168.20.46:56082 My Timestamp : 1585376753136, Peer's timestamp: 1585376948704
+2020-03-28 14:29:08,831 INFO [TaskBatchingWorker-target_localhost-12][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=true)
+2020-03-28 14:29:11,726 INFO [http-nio-56080-exec-6][AbstractInstanceRegistry.java:330] - Cancelled instance BANK2/bank2:192.168.20.46:56082 (replication=false)
+2020-03-28 14:29:12,228 WARN [http-nio-56080-exec-8][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK2/bank2:192.168.20.46:56082
+2020-03-28 14:29:12,228 INFO [http-nio-56080-exec-8][InstanceResource.java:288] - Not Found (Cancel): BANK2 - bank2:192.168.20.46:56082
+2020-03-28 14:29:12,229 WARN [TaskBatchingWorker-target_localhost-17][ReplicationTask.java:35] - The replication of task BANK2/bank2:192.168.20.46:56082:Cancel@localhost failed with response code 404
+2020-03-28 14:29:12,229 WARN [TaskBatchingWorker-target_localhost-17][PeerEurekaNode.java:171] - BANK2/bank2:192.168.20.46:56082:Cancel@localhost: missing entry.
+2020-03-28 14:29:20,903 INFO [http-nio-56080-exec-5][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:29:21,405 INFO [http-nio-56080-exec-6][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:30:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:31:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:32:03,903 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 5
+2020-03-28 14:32:03,987 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:32:37,266 INFO [http-nio-56080-exec-5][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=false)
+2020-03-28 14:32:37,476 INFO [http-nio-56080-exec-6][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=true)
+2020-03-28 14:32:40,299 INFO [http-nio-56080-exec-7][AbstractInstanceRegistry.java:330] - Cancelled instance BANK2/bank2:192.168.20.46:56082 (replication=false)
+2020-03-28 14:32:40,804 WARN [http-nio-56080-exec-2][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK2/bank2:192.168.20.46:56082
+2020-03-28 14:32:40,805 INFO [http-nio-56080-exec-2][InstanceResource.java:288] - Not Found (Cancel): BANK2 - bank2:192.168.20.46:56082
+2020-03-28 14:32:40,805 WARN [TaskBatchingWorker-target_localhost-3][ReplicationTask.java:35] - The replication of task BANK2/bank2:192.168.20.46:56082:Cancel@localhost failed with response code 404
+2020-03-28 14:32:40,805 WARN [TaskBatchingWorker-target_localhost-3][PeerEurekaNode.java:171] - BANK2/bank2:192.168.20.46:56082:Cancel@localhost: missing entry.
+2020-03-28 14:32:50,085 INFO [http-nio-56080-exec-7][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:32:50,588 INFO [http-nio-56080-exec-9][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:32:58,467 INFO [http-nio-56080-exec-9][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=false)
+2020-03-28 14:32:58,971 INFO [http-nio-56080-exec-2][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=true)
+2020-03-28 14:33:01,494 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:330] - Cancelled instance BANK1/bank1:192.168.20.46:56081 (replication=false)
+2020-03-28 14:33:01,997 WARN [http-nio-56080-exec-5][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK1/bank1:192.168.20.46:56081
+2020-03-28 14:33:01,998 INFO [http-nio-56080-exec-5][InstanceResource.java:288] - Not Found (Cancel): BANK1 - bank1:192.168.20.46:56081
+2020-03-28 14:33:01,998 WARN [TaskBatchingWorker-target_localhost-6][ReplicationTask.java:35] - The replication of task BANK1/bank1:192.168.20.46:56081:Cancel@localhost failed with response code 404
+2020-03-28 14:33:01,999 WARN [TaskBatchingWorker-target_localhost-6][PeerEurekaNode.java:171] - BANK1/bank1:192.168.20.46:56081:Cancel@localhost: missing entry.
+2020-03-28 14:33:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:33:11,279 INFO [http-nio-56080-exec-4][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=false)
+2020-03-28 14:33:11,781 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=true)
+2020-03-28 14:34:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:34:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=1, evictionLimit=1)
+2020-03-28 14:34:03,989 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for BANK2/bank2:192.168.20.46:56082
+2020-03-28 14:34:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance BANK2/bank2:192.168.20.46:56082 (replication=false)
+2020-03-28 14:35:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:36:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:37:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:37:29,867 INFO [http-nio-56080-exec-2][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=false)
+2020-03-28 14:37:30,374 INFO [http-nio-56080-exec-8][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status DOWN (replication=true)
+2020-03-28 14:37:32,900 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:330] - Cancelled instance BANK1/bank1:192.168.20.46:56081 (replication=false)
+2020-03-28 14:37:33,403 WARN [http-nio-56080-exec-6][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK1/bank1:192.168.20.46:56081
+2020-03-28 14:37:33,404 INFO [http-nio-56080-exec-6][InstanceResource.java:288] - Not Found (Cancel): BANK1 - bank1:192.168.20.46:56081
+2020-03-28 14:37:33,405 WARN [TaskBatchingWorker-target_localhost-10][ReplicationTask.java:35] - The replication of task BANK1/bank1:192.168.20.46:56081:Cancel@localhost failed with response code 404
+2020-03-28 14:37:33,405 WARN [TaskBatchingWorker-target_localhost-10][PeerEurekaNode.java:171] - BANK1/bank1:192.168.20.46:56081:Cancel@localhost: missing entry.
+2020-03-28 14:37:41,485 INFO [http-nio-56080-exec-9][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=false)
+2020-03-28 14:37:41,987 INFO [http-nio-56080-exec-2][AbstractInstanceRegistry.java:266] - Registered instance BANK1/bank1:192.168.20.46:56081 with status UP (replication=true)
+2020-03-28 14:38:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:39:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:39:11,527 WARN [http-nio-56080-exec-4][AbstractInstanceRegistry.java:353] - DS: Registry: lease doesn't exist, registering resource: BANK2 - bank2:192.168.20.46:56082
+2020-03-28 14:39:11,528 WARN [http-nio-56080-exec-4][InstanceResource.java:116] - Not Found (Renew): BANK2 - bank2:192.168.20.46:56082
+2020-03-28 14:39:11,537 INFO [http-nio-56080-exec-3][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:39:12,040 INFO [http-nio-56080-exec-9][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:40:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:40:15,956 INFO [http-nio-56080-exec-2][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=false)
+2020-03-28 14:40:16,465 INFO [http-nio-56080-exec-8][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status DOWN (replication=true)
+2020-03-28 14:40:18,984 INFO [http-nio-56080-exec-6][AbstractInstanceRegistry.java:330] - Cancelled instance BANK2/bank2:192.168.20.46:56082 (replication=false)
+2020-03-28 14:40:19,488 WARN [http-nio-56080-exec-2][AbstractInstanceRegistry.java:315] - DS: Registry: cancel failed because Lease is not registered for: BANK2/bank2:192.168.20.46:56082
+2020-03-28 14:40:19,489 INFO [http-nio-56080-exec-2][InstanceResource.java:288] - Not Found (Cancel): BANK2 - bank2:192.168.20.46:56082
+2020-03-28 14:40:19,489 WARN [TaskBatchingWorker-target_localhost-1][ReplicationTask.java:35] - The replication of task BANK2/bank2:192.168.20.46:56082:Cancel@localhost failed with response code 404
+2020-03-28 14:40:19,489 WARN [TaskBatchingWorker-target_localhost-1][PeerEurekaNode.java:171] - BANK2/bank2:192.168.20.46:56082:Cancel@localhost: missing entry.
+2020-03-28 14:40:28,335 INFO [http-nio-56080-exec-7][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=false)
+2020-03-28 14:40:28,842 INFO [http-nio-56080-exec-9][AbstractInstanceRegistry.java:266] - Registered instance BANK2/bank2:192.168.20.46:56082 with status UP (replication=true)
+2020-03-28 14:41:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:42:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:43:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:44:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:45:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:46:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:47:03,903 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 6
+2020-03-28 14:47:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:48:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:49:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+2020-03-28 14:50:03,989 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
