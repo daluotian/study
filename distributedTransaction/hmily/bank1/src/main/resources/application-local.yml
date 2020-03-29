@@ -10,11 +10,11 @@ spring:
   ##################### DB #####################
   datasource:
     ds0:
-      url: jdbc:mysql://localhost:3306/bank1?useUnicode=true
+      url: jdbc:mysql://47.96.145.233:3306/bank1?useUnicode=true
       username: root
-      password: 123456
+      password: TIANZHIDAO@233
       type: com.alibaba.druid.pool.DruidDataSource
-      driver-class-name: com.mysql.cj.jdbc.Driver
+      driver-class-name: com.mysql.jdbc.Driver
       initialSize: 5
       minIdle: 5
       maxActive: 20
@@ -40,9 +40,9 @@ org:
       started: false
       hmilyDbConfig :
         driverClassName  : com.mysql.jdbc.Driver
-        url :  jdbc:mysql://localhost:3306/hmily?useUnicode=true
+        url :  jdbc:mysql://47.96.145.233:3306/hmily?useUnicode=true
         username : root
-        password : mysql
+        password : TIANZHIDAO@233
 
 
 

@@ -61,7 +61,6 @@ public class AccountInfoServiceImpl implements AccountInfoService {
         //获取全局事务id
         String transId = HmilyTransactionContextLocal.getInstance().get().getTransId();
         log.info("bank2 cancel begin 开始执行...xid:{}",transId);
-
     }
 
 }
