@@ -2,19 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bank2" />
         <module name="bank1" />
+        <module name="hmily-demo" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="eureka" options="" />
-    </option>
+    <bytecodeTargetLevel>
+      <module name="bank1" target="1.8" />
+      <module name="bank2" target="1.8" />
+      <module name="dtx-notifymsg-demo" target="1.8" />
+      <module name="dtx-notifymsg-demo-bank1" target="1.8" />
+      <module name="dtx-notifymsg-demo-bank2" target="1.8" />
+      <module name="dtx-notifymsg-demo-pay" target="1.8" />
+      <module name="dtx-seata-demo" target="1.8" />
+      <module name="dtx-seata-demo-bank1" target="1.8" />
+      <module name="dtx-seata-demo-bank2" target="1.8" />
+      <module name="dtx-tcc-demo" target="1.8" />
+      <module name="dtx-txmsg-demo" target="1.8" />
+      <module name="dtx-txmsg-demo-bank1" target="1.8" />
+      <module name="dtx-txmsg-demo-bank2" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="hmily" target="1.8" />
+      <module name="hmily-demo" target="1.8" />
+      <module name="hmily-demo-bank1" target="1.8" />
+      <module name="hmily-demo-bank2" target="1.8" />
+      <module name="hmily-demo-discover-server" target="1.5" />
+      <module name="wanxin-hmily-demo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

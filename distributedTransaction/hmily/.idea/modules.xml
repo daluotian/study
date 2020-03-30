@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hmily-demo/bank1/bank1.iml" filepath="$PROJECT_DIR$/hmily-demo/bank1/bank1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmily-demo/bank2/bank2.iml" filepath="$PROJECT_DIR$/hmily-demo/bank2/bank2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hmily.iml" filepath="$PROJECT_DIR$/.idea/hmily.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hmily-demo/hmily-demo.iml" filepath="$PROJECT_DIR$/hmily-demo/hmily-demo.iml" />
+    </modules>
+  </component>
+</project>

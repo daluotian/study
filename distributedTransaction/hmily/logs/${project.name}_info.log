@@ -1,6 +1,0 @@
-deleted file mode 100644
-@@ -1,4 +0,0 @@
--2020-03-28 17:00:23,122 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
--2020-03-28 17:01:23,122 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
--2020-03-28 17:02:23,122 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
--2020-03-28 17:03:23,122 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
