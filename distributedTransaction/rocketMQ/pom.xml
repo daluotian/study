@@ -11,7 +11,6 @@
     <modules>
         <module>bank1</module>
         <module>bank2</module>
-        <module>eureka</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

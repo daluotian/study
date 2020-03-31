@@ -1,6 +1,6 @@
 package cn.idealismus.bank1.dao;
 
-import cn.itcast.dtx.txmsgdemo.bank1.entity.AccountInfo;
+import cn.idealismus.bank1.entity.AccountInfo;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Component;
 

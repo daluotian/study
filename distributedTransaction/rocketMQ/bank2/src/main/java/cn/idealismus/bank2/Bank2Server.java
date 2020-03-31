@@ -5,9 +5,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Bnk2Server {
+public class Bank2Server {
 
     public static void main(String[] args) {
-        SpringApplication.run(Bnk2Server.class,args);
+        SpringApplication.run(Bank2Server.class,args);
     }
 }
