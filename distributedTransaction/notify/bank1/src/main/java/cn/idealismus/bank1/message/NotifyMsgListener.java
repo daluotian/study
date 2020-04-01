@@ -23,6 +23,7 @@ public class NotifyMsgListener implements RocketMQListener<AccountPay> {
         AccountChangeEvent accountChangeEvent = new AccountChangeEvent();
         accountChangeEvent.setAccountNo(accountPay.getAccountNo());
         accountChangeEvent.setAmount(accountPay.getPayAmount());
+        accountChangeEvent.setTxNo(accountPay.getId());
         accountInfoService.updateAccountInfoBalance(accountChangeEvent);
         log.info("接收消息结束......");
     }

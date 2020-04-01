@@ -23,7 +23,7 @@ public class AccountInfoServiceImpl implements AccountInfoService {
     @Transactional
     public void updateAccountInfoBalance(AccountChangeEvent accountChangeEvent) {
         log.info("bank1开始新增金额...开始幂等...");
-        if (accountInfoDao.isExistTx(accountChangeEvent.getTxNo()) > 1) {
+        if (accountInfoDao.isExistTx(accountChangeEvent.getTxNo()) > 0) {
             return;
         }
         accountInfoDao.updateAccountBalance(accountChangeEvent.getAccountNo(),accountChangeEvent.getAmount());

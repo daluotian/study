@@ -27,7 +27,7 @@ public class AccountPayServiceImpl implements AccountPayService {
     public AccountPay insertAccountPay(AccountPay accountPay) {
         log.info("充值开始...");
         int success = accountPayDao.insertAccountPay(accountPay.getId(),accountPay.getAccountNo(),accountPay.getPayAmount(),"success");
-        if (success > 1) {
+        if (success > 0) {
             log.info("充值成功，开始发送消息...");
             //使用普通消息发送通知
             rocketMQTemplate.convertAndSend("topic_notify_msg",accountPay);
