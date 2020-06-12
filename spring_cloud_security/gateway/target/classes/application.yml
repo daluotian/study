@@ -1,0 +1,47 @@
+server:
+  port: 53010
+spring:
+  application:
+    name: gateway
+  main:
+    allow-bean-definition-overriding: true
+logging:
+  level: 
+    root: info
+    org.springframework: info
+zuul:
+  retryable: true
+  ignored-services: "*"
+  add-proxy-headers: true
+  sensitive-headers: "*"
+  routes: 
+    uaa:
+      stripPrefix: false
+      path: /uaa/**
+    order:
+      stripPrefix: false
+      path: /order/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,healeth,info,env
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:53000/eureka/
+  instance:
+    prefer-ip-address: true
+    instance_id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}
+feign:
+  hystrix:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+      mime-types[0]: text/xml
+      mime-types[1]: application/xml
+      mime-types[2]: application/json
+      min-request-size: 2048
+    response:
+      enabled: true

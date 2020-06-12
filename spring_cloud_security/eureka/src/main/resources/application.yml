@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: eureka
+server:
+  port: 53000
+eureka:
+  server:
+    #关闭自我保护
+    enable-self-preservation: false
+    #十秒清除无效服务
+    eviction-interval-timer-in-ms: 10000
+    #eureka是CAP理论种基于AP策略，为了保证强一致性关闭此切换CP 默认不关闭 false关闭
+    shouldUseReadOnlyResponseCache: true
+  client:
+    #不将自己注册到eureka
+    register-with-eureka: false
+    #为true时，可以启动，但报异常：Cannot execute request on any known server
+    fetch-registry: false
+    instance-info-replication-interval-seconds: 10
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${spring.application.instance_id:${server.port}}

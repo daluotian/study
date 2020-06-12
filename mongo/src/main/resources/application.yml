@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      #主机
+      host: localhost
+      #端口
+      port: 27017
+      #数据库名
+      database: articledb
+      #也可以用uri
+      #uri: mongod://localhost:27017/articledb
+server:
+  port: 80
