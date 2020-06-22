@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zk-interface:war">
+    <output-path>$PROJECT_DIR$/zk-interface/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>zk-interface</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="zk-interface.war">
+      <element id="artifact" artifact-name="zk-interface:war exploded" />
+    </root>
+  </artifact>
+</component>

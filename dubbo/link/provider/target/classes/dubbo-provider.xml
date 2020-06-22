@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 服务提供者名称，必须保证服务名称的唯一性，它的名称是 dubbo 内部使用的唯一性 -->
+    <dubbo:application name="provider" />
+    <!-- 访问服务协议的名称和端口号
+        name: 协议名称，官方推荐 dubbo 协议
+        port: 默认端口号为20880
+     -->
+    <dubbo:protocol name="dubbo" port="20880"/>
+    <!-- 暴露服务
+        interface: 暴露接口的全限定类名
+        ref: 接口实现类的引用
+        registry: N/A表示不使用注册中心，直连
+     -->
+    <dubbo:service interface="ink.taofu.dubbo.service.UserService" ref="userService" registry="N/A"/>
+    <!-- 将接口实现类交给 spring 容器管理 -->
+    <bean name="userService" class="ink.taofu.dubbo.service.impl.UserServiceImpl"/>
+</beans>
